@@ -6,7 +6,7 @@
     >
       <h1>Vue Component Playground</h1>
       <p>This page is to add components and play with how they interact</p>
-      <counter @countChanged="countChanged" />
+      <counter @count-changed="countChanged" />
       <p>{{count}}</p>
     </v-col>
   </div>

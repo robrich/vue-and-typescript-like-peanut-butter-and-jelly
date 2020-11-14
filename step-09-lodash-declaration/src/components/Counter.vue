@@ -32,20 +32,16 @@ export default Vue.extend({
     };
   },
 
-  mounted() {
-    this.$emit('countChanged', {count: this.count});
-  },
-
   methods: {
 
     add() {
       this.count++;
-      this.$emit('countChanged', {count: this.count});
+      this.$emit('count-changed', {count: this.count});
     },
 
     sub() {
       this.count--;
-      this.$emit('countChanged', {count: this.count});
+      this.$emit('count-changed', {count: this.count});
     }
 
   }
